@@ -1,0 +1,105 @@
+main {
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+button {
+	font-family: arial;
+	font-size: 18px;
+	border-radius: 40px;
+	padding:10px;
+	width: 300px;
+	transform: scale(1);
+	outline: none;
+	box-shadow: 2px 2px 2px rgba(0,0,0,0.2)
+
+}
+button:hover {
+	transform: scale(0.9);
+	transition: transform 0.3s ease;
+	box-shadow: 1px 1px 1px rgba(0,0,0,0.2)
+}
+
+button:active {
+	transform: scale(1.1);
+	transition: transform 0.3s ease;
+	box-shadow: 3px 3px 3px rgba(0,0,0,0.2)
+}
+
+#josh {
+	animation: float 4s ease-in-out infinite;
+
+
+}
+
+#heart {
+	animation: love 1s ease-in-out infinite;
+}
+#heart2 {
+		animation: love2 1s ease-in-out infinite;
+}
+#heart3 {
+			animation: love3 1s ease-in-out infinite;
+		  }
+#heart4 {
+    animation: love4 1s ease-in-out infinite;
+					 }
+
+	@keyframes love {
+		0% {opacity: 0}
+		50% {opacity: 1}
+		100% {opacity: 0}
+	}
+
+	@keyframes love2 {
+		0% {opacity: 0}
+		25% {opacity: 1}
+		100% {opacity: 0}
+	}
+
+	@keyframes love3 {
+		0% {opacity: 0}
+		75% {opacity: 1}
+		100% {opacity: 0}
+	}
+
+	@keyframes love4 {
+		0% {opacity: 0}
+		50% {opacity: 1}
+		100% {opacity: 0}
+	}
+
+
+@keyframes float {
+	0% {transform: translate(0,0);}
+	50% {transform: translate(0,-70px) rotate(1deg);}
+	100% {transform: translate(0,0);}
+}
+
+#light{
+	 animation: lightsaber 0.3s ease-in 1 forwards;
+	 transform-origin: 40px 350px;
+   animation-play-state: paused;
+}
+
+#Stroke-9 {
+	stroke:#cc4271;
+		 animation: lightsaber2 2s ease-in 1 forwards;
+}
+
+@keyframes lightsaber2 {
+  0%
+    {stroke:#cc4271; }
+
+	 100% {stroke:#f72b70; }
+
+}
+
+@keyframes lightsaber {
+  0%
+    {transform: scale(0); }
+
+	100%
+	    {transform: scale(1); }
+
+}

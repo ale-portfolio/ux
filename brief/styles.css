@@ -1,0 +1,1499 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+ol,
+ul {
+	list-style: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+.more li {
+	padding-bottom: 20px;
+}
+/*comps*/
+
+* {
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+.mainnav a {
+	font-family: "Montserrat";
+	display: inline-block;
+	padding: 10px;
+	margin-left: 20px;
+	font-size: 14px;
+	text-decoration: none;
+}
+.budget {
+	margin-top: 40px;
+}
+.forward {
+	display: inline-block;
+	margin-top: 10px;
+	float: right;
+}
+.venueCount {
+	display: inline-block;
+	padding: 10px;
+	margin: 20px;
+}
+a.option {
+	border: 1px solid #2A9FD8;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+}
+
+a.option.style {
+	display: inline-block;
+}
+a.option2 {
+	border: 1px solid #2A9FD8;
+	color: #fff;
+	background-color: #2A9FD8;
+	border-radius: 5px;
+	display: inline-block;
+	padding: 10px;
+	text-align: center;
+	cursor: pointer;
+}
+.spacepics {
+	display: inline-grid;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+a.guest.current {
+	border-bottom: 1px solid #2A9FD8;
+	padding-bottom: 20px;
+}
+a.guest {
+	margin-right: 40px;
+	padding-bottom: 20px;
+}
+
+.secnav {
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 20px;
+	margin-bottom: 20px;
+}
+.headings {
+	background-color: #fafafa;
+}
+table,
+th,
+td {
+	border-collapse: collapse;
+}
+th,
+td {
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+}
+th {
+	text-align: left;
+}
+table {
+	border-spacing: 5px;
+}
+.spacepics img {
+	border-radius: 10px;
+}
+a.option:hover {
+	border: 1px solid #2A9FD8;
+	color: #fff;
+	background-color: #2A9FD8;
+}
+a.option2:hover {
+	border: 1px solid #2A9FD8;
+	color: #fff;
+	background-color: #2A9FD8;
+}
+a.option:active {
+	color: #fff;
+}
+a.option2:active {
+	color: #fff;
+}
+a.host {
+	border: 1px solid #2A9FD8;
+	border-radius: 5px;
+}
+a.host:hover {
+	border: 1px solid #2A9FD8;
+	color: #fff;
+	background-color: #2A9FD8;
+}
+.secondary {
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	background: rgba(255, 255, 255, 0.7);
+	border-top: 1px solid #f1eae1;
+	z-index: 1000;
+	box-shadow: rgb(219, 219, 219) 0px 2px 4px 1px;
+	text-align: right;
+}
+a {
+	color: #2A9FD8;
+	text-decoration: none;
+	font-weight: 700;
+}
+a:hover {
+	color: #50b9e6;
+}
+header a,
+header a:hover,
+.mobile a,
+.mobile a:hover {
+	border: none;
+}
+.matches{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+.matches p{
+
+	margin-bottom: 0;
+}
+.animate {
+	min-width: 128px;
+	margin-bottom: 40px;
+}
+
+#uno {
+	animation:uno 1s ease-out forwards;
+
+}
+
+#dos {
+	opacity:0;
+	animation:uno 1s ease-out  forwards;
+	animation-delay: 1s;
+	background: #fff;
+
+
+}
+
+#tres {
+	opacity:0;
+	animation:uno 1s ease-out  forwards;
+	animation-delay: 2s;
+	background: #fff;
+
+
+
+}
+
+#cuatro {
+	opacity:0;
+	animation:dos 1s ease-out  forwards;
+	animation-delay: 3s;
+	background: #fff;
+
+}
+@keyframes uno {
+	0% {opacity: 0;}
+	50% {opacity: 1;}
+	100% {opacity: 0;}
+}
+
+@keyframes dos {
+	0% {opacity: 0;}
+	100% {opacity: 1;}
+
+}
+
+.journey {
+	color:#aaa;
+}
+
+.step {
+margin-right: 20px;
+margin-bottom: 20px;
+display: inline-block;
+}
+
+.stepnumber {
+		background: #2A9FD8;
+	    color: #fff;
+	    padding: 10px;
+	    border-radius: 50%;
+	    height: 40px;
+	    text-align: center;
+	    width: 40px;
+	    display: inline-block;
+			margin-right: 10px;
+}
+
+.stepnumberd {
+	    padding: 10px;
+			border:1px solid #aaa;
+	    border-radius: 50%;
+	    height: 40px;
+	    text-align: center;
+	    width: 40px;
+
+	    display: inline-block;
+				margin-right: 5px;
+}
+
+
+
+button a {
+	display: block;
+	padding: 10px;
+}
+/* Customize the label (the container) */
+
+.container {
+	display: block;
+	position: relative;
+	padding-left: 35px;
+	margin-bottom: 40px;
+	cursor: pointer;
+	font-size: 20px;
+	font-weight: 400;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #2f2f2f;
+}
+.container p,
+.container4 p {
+	margin-top: 10px;
+}
+/* Hide the browser's default checkbox */
+
+.container input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+
+.checkmark {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+
+.container:hover input ~ .checkmark {
+	background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+	background-color: #2A9FD8;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+/*styles*/
+
+/* Customize the label (the container) */
+
+.container2 {
+	display: block;
+	position: relative;
+	cursor: pointer;
+	font-size: 20px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	color: #2A9FD8;
+	font-weight: 700;
+	border-radius: 50%;
+}
+/* Hide the browser's default checkbox */
+
+.container2 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom checkbox */
+
+.checkmark2 {
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	height: 25px;
+	width: 25px;
+	background-color: #fff;
+	border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+
+.container2:hover input ~ .checkmark2 {
+	background-color: #ccc;
+}
+/* When the checkbox is checked, add a blue background */
+
+.container2 input:checked ~ .checkmark2 {
+	background-color: #2A9FD8;
+}
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark2:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the checkmark when checked */
+
+.container2 input:checked ~ .checkmark2:after {
+	display: block;
+}
+/* Style the checkmark/indicator */
+
+.container2 .checkmark2:after {
+	left: 9px;
+	top: 5px;
+	width: 5px;
+	height: 10px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+.mainnav a.active {
+	color: #fff;
+}
+q {
+	font-size: 32px;
+	font-weight: 800;
+	padding: 40px 0 40px 0;
+	margin-bottom: 20px;
+	border-radius: 5px;
+	display: block;
+}
+q::before {
+	color: #17abd8 content: ' “ ';
+}
+.disabled {
+	opacity: 0.3
+}
+q::after {
+	color: #17abd8 content: ' ” ';
+}
+body {
+	background-color: #fff;
+	color: #2f2f2f;
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	font-size: 18px;
+	margin: auto;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	min-height: 100vh;
+	overflow: scroll;
+}
+button[type="submit"] {
+	padding: 10px;
+	display: block;
+}
+.special {
+	font-weight: 700;
+}
+button,
+input[type="submit"],
+a.likebutton,a.likebutton3 {
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	border-radius: 5px;
+	border: none;
+	margin: 20px 0 20px 0;
+	outline: none;
+	text-align: center;
+	width: 100%;
+	max-width: 200px;
+	font-size: 16px;
+	display: block;
+}
+a.likebutton2 {
+	font-family: 'Montserrat', helvetica, arial, sans-serif;
+	border-radius: 5px;
+	border: none;
+	outline: none;
+	text-align: center;
+	width: 100%;
+	font-size: 16px;
+	display: block;
+}
+
+
+
+.waiting{padding:10px 0;}
+button.primary,
+input[type="submit"],
+a.likebutton,
+a.likebutton2,a.likebutton3 {
+	background-color: #2A9FD8;
+	color: #fff;
+}
+input[type="time"],
+input[type="date"],input[type="number"] {
+	max-width: 240px;
+}
+input[type="range"] {
+	margin: 0;
+}
+button.primary a,
+a.likebutton,a.likebutton3 {
+	color: #fff;
+}
+
+
+.radioitem {
+	margin-bottom: 20px;
+}
+.date {
+	margin-bottom: 40px;
+}
+
+.timings {
+	margin-top: 40px;
+}
+.logo {
+	width: 200px;
+}
+
+
+input[type=checkbox],
+input[type=radio] {
+	display: inline-block;
+	width: 20px;
+	margin: 0;
+}
+button.primary:hover,
+input[type="submit"]:hover,
+a.likebutton:hover,
+a.likebutton2:hover,a.likebutton3:hover  {
+	background-color: #50b9e6;
+	color: #fff;
+	cursor: pointer;
+}
+button:active,
+input[type="submit"]:active,
+a.likebutton:active,
+a.option:active,
+a.likebutton2:active {
+	transform: scale(0.9);
+	transition: transform 0.1s;
+	transition-timing-function: ease-in-out;
+}
+a.likebutton,
+a.likebutton2,a.likebutton3 {
+	display: block;
+	padding: 10px;
+}
+
+.center {
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-column-gap: 20px;
+}
+
+a.likebutton3 {
+	display: inline-block;
+	margin: 0;
+}
+
+a.likebutton.disabled:hover,
+a.likebutton.disabled:active {
+	transform: scale(1);
+	box-shadow: 0;
+}
+a.likebutton.disabled {
+	opacity: 0.4;
+}
+.tasks li:before {
+	content: ' ✔ ';
+}
+#process li,
+#goals li,
+#principles li {
+	margin-bottom: 40px;
+	list-style-type: none;
+}
+.map {
+	margin-top: 40px;
+}
+.tasks li {
+	margin-bottom: 20px;
+}
+footer p {
+	margin: 0;
+	color: #2f2f2f;
+	font-weight: 400;
+}
+.legal {
+	font-size: 12px;
+}
+.card {
+	margin-bottom: 64px;
+	margin-top: 32px;
+}
+.card:first-child {
+	margin-top: 104px;
+}
+.centered {
+	margin: 0 auto;
+	max-width: 1200px;
+	padding: 20px;
+}
+.iframe {
+	padding-bottom: 20px;
+}
+.how {
+	margin-bottom: 40px;
+}
+.how li {
+	list-style: none;
+	margin-bottom: 20px;
+}
+.editTime {
+	margin-bottom: 40px;
+	display: block;
+}
+.steps {
+	background-color: #2A9FD8;
+	display: inline-block;
+	padding: 10px;
+	height: 40px;
+	width: 40px;
+	border-radius: 40px;
+	margin-right: 10px;
+	color: #fff;
+	text-align: center;
+}
+.marketing {
+	margin-top: 40px;
+}
+small {
+	font-size: 14px;
+	margin-bottom: 20px;
+	display: block;
+}
+.head {
+	background-color: #FFFFFF;
+	padding: 20px;
+	border-radius: 5px;
+	font-size: 14px;
+}
+.head button {
+	font-size: 14px;
+	width: 100px;
+}
+em {
+	font-weight: 700;
+}
+figure {
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: flex-start;
+	justify-content: center;
+}
+footer h4 {
+	margin-bottom: 10px;
+}
+.links1 {
+	margin-bottom: 20px;
+}
+footer nav li {
+	display: block;
+}
+footer a {
+	font-size: 14px;
+	padding: 5px 0;
+	display: block;
+	color: #2f2f2f;
+	opacity: 0.6;
+	font-weight: 400;
+}
+footer a:hover {
+	color: #2A9FD8;
+	opacity: 1;
+}
+.format {
+	border: 1px solid #f1eae1;
+	padding: 20px;
+	border-radius: 5px;
+	cursor: pointer;
+	text-align: center;
+}
+.format:hover {
+	border: 1px solid #2A9FD8;
+}
+.format p {
+	margin: 0;
+}
+
+header {
+	color: #fff;
+	width: 100%;
+	border-bottom: 1px solid #f1eae1;
+	position: fixed;
+	z-index: 2000;
+	background-color: #fff;
+	box-shadow: rgb(219, 219, 219) 0px 4px 2px -2px
+}
+.header {
+	display: flex;
+	align-items: center;
+}
+footer {
+	bottom: 0;
+	width: 100%;
+	border-top: 1px solid #f1eae1;
+	padding: 20px 0 20px 0;
+}
+footer nav {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 4%;
+	width: 100%;
+}
+img {
+	width: 100%;
+}
+em.price {
+	position: absolute;
+	right: 20px;
+	background: rgba(47, 47, 47, 0.6);
+	padding: 10px;
+	border-radius: 0 0 10px 10px;
+}
+.amount {
+	font-size: 18px;
+	font-weight: 700;
+}
+.venues {
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 100;
+	font-size: 14px;
+	border-radius: 5px;
+}
+
+.venues2 {
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 100;
+	font-size: 14px;
+	border-radius: 5px;
+	border:1px solid #ccc;
+	padding:20px;
+}
+
+.venues img {
+	width: 275px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+
+.venues2 img {
+	margin-bottom: 10px;
+	border-radius: 5px;
+}
+.grid2 img {
+	width: 320px;
+	margin-bottom: 8px;
+	border-radius: 10px;
+}
+/*.venues:hover {
+	transform:scale(0.96);
+	transition: transform 0.2s;
+}*/
+
+.venuesOptions {
+	margin-bottom: 20px;
+	position: relative;
+	z-index: 100;
+	color: #fff;
+	max-width: 479px;
+}
+.venuesOptions img {
+	margin-bottom: 8px;
+	border-radius: 10px;
+}
+.quote {
+	padding: 40px;
+	border-left: 1px solid #ccc;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+/* Customize the label (the container) */
+
+.container3 {
+	display: block;
+	position: relative;
+	margin-bottom: 40px;
+	cursor: pointer;
+	font-size: 22px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+
+	user-select: none;
+}
+
+.container img {
+	border-radius:5px;
+}
+
+
+/* Hide the browser's default radio button */
+
+.container3 input {
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+/* Create a custom radio button */
+
+.checkmark3 {
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	height: 25px;
+	width: 25px;
+	background-color: #eee;
+	border-radius: 50%;
+}
+/* On mouse-over, add a grey background color */
+
+.container3:hover input ~ .checkmark3 {
+	background-color: #ccc;
+}
+/* When the radio button is checked, add a blue background */
+
+.container3 input:checked ~ .checkmark3 {
+	background-color: #2196F3;
+}
+/* Create the indicator (the dot/circle - hidden when not checked) */
+
+.checkmark3:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+/* Show the indicator (dot/circle) when checked */
+
+.container3 input:checked ~ .checkmark3:after {
+	display: block;
+}
+/* Style the indicator (dot/circle) */
+
+.container3 .checkmark3:after {
+	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
+}
+h1 {
+	font-size: 40px;
+	margin-bottom: 20px;
+}
+h2 {
+	font-size: 32px;
+	margin-bottom: 20px;
+}
+h3 {
+	font-size: 24px;
+	margin-bottom: 20px;
+}
+h4 {
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+h5 {
+	font-size: 14px;
+	margin-bottom: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+	color: #2f2f2f;
+	font-family: 'Montserrat', serif;
+	font-weight: 700;
+}
+.special {} label {
+	margin-bottom: 10px;
+	display: inline-block;
+	font-size: 14px;
+}
+.greatfor {
+	margin-bottom: 40px;
+}
+.greatfor svg {
+	max-height: 30px;
+}
+.greatfor span {
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+
+.greatfor2 {
+	margin-bottom: 0;
+}
+.greatfor2 svg {
+	max-height: 30px;
+}
+.greatfor2 span {
+	display: inline-block;
+	margin-right: 40px;
+	margin-bottom: 20px;
+}
+.listing {
+	margin-bottom: 40px;
+}
+.tooltip {
+	position: relative;
+	    display: inline-block;
+	    left: -140px;
+	    top: 10px;
+}
+/* Tooltip text */
+
+.tooltip .tooltiptext {
+	margin-top: 20px;
+	background-color: #2A9FD8;
+	color: #fff;
+	padding: 30px;
+	border-radius: 4px;
+	box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 4px -4px;
+	font-weight: 400;
+	border: 1px solid #2A9FD8;
+	font-size: 18px;
+	/* Position the tooltip text - see examples below! */
+	position: absolute;
+	z-index: 1;
+}
+.tooltip::after {
+	content: "";
+	position: absolute;
+	top: 100%;
+	left: 80%;
+	margin-top: 10px;
+	margin-left: 68px;
+	border-width: 5px;
+	border-style: solid;
+	border-color: #2A9FD8 transparent transparent transparent;
+	transform: rotate(180deg);
+}
+.hugeemoji {
+	font-size: 32px;
+	display: block;
+}
+@keyframes point {
+  from {
+
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+  to {
+  transform: translateY(0);
+  }
+}
+.firstux {position: relative}
+
+em.point {
+	animation: point 0.8s infinite ;
+}
+/* Customize the label (the container) */
+
+.gridwrapper1c {
+	display: inline-grid;
+	grid-template-columns: 70% 28%;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+a.back {
+	margin-bottom: 20px;
+	display: inline-block;
+	font-size: 14px;
+}
+li {
+	list-style-type: circle;
+	margin: 10px;
+}
+input,
+textarea,
+select {
+	font-family: "Montserrat", helvetica, arial, sans-serif;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	font-size: 18px;
+	margin-bottom: 40px;
+	padding: 20px;
+	outline: none;
+	width: 100%;
+	max-width: 500px;
+}
+input,
+textarea,
+select {
+	font-family: "Montserrat", helvetica, arial, sans-serif;
+	background-color: #FFFFFF;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	display: block;
+	font-size: 18px;
+	margin-bottom: 40px;
+	padding: 20px;
+	outline: none;
+	width: 100%;
+	max-width: 500px;
+}
+.summary input[type="number"] {
+	margin-bottom: 10px;
+}
+input[type=checkbox] {
+	display: inline-block;
+	width: 20px;
+}
+input:hover,
+textarea:hover,
+select {
+	background-color: #FFF;
+	border: 1px solid #ccc;
+}
+.mainnav {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+	align-items: center;
+}
+.wrapper {
+	min-height: 100vh;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+
+p {
+	margin: 0 0 20px 0;
+}
+.case2 {
+	background-color: #fff;
+	border-radius: 10px;
+}
+::placeholder {
+	color: rgba(0, 41, 54, 0.4);
+}
+svg {
+	max-width: 100%;
+}
+.concept {
+	background-color: #2f2f2f;
+	padding: 4px;
+	border-radius: 2px;
+	font-size: 10px;
+	width: 60px;
+	margin-bottom: 20px;
+	color: #fff;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+ul {
+	list-style-type: none;
+	padding-left: 0px;
+}
+.case {
+	background-color: #fff;
+	padding: 0 40px;
+	border-radius: 10px;
+}
+.corporate {
+	background-color: #2f2f2f;
+	border-radius: 10px;
+}
+.case #red-arrows,
+.case #blue-arrows,
+.case #black-arrows {
+	animation: arrows 2s ease 1;
+	animation-play-state: running;
+}
+/*Experimental*/
+
+.gridwrapper1 {
+	display: inline-grid;
+	grid-template-columns: 48% 48%;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+.gridwrapper1b {
+	display: inline-grid;
+	grid-template-columns: 20% 70%;
+	grid-gap: 80px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+.gridwrapper2 {
+	width: 100%;
+	padding: 20px 0;
+}
+.gridwrapper3 {
+	display: inline-grid;
+	grid-template-columns: auto auto auto;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+.yourEvent {
+	border-right: 1px solid #ccc;
+	padding: 40px;
+	font-size: 14px;
+}
+.description {
+	font-size: 14px;
+	margin-bottom: 20px;
+}
+.description p {
+	margin-bottom: 0;
+	color: #2f2f2f;
+}
+.cities {
+	font-size: 24px;
+	color: #fff;
+	font-weight: 700;
+	box-shadow: inset 80px 80px 80px rgba(0, 0, 0, 0.4);
+	text-align: center;
+	padding: 80px;
+	text-shadow: 1px 1px 8px rgba(0, 0, 0, 0.7);
+	border-radius: 10px;
+	transition: box-shadow 0.2s ease 0.2s;
+}
+.cities:hover {
+	box-shadow: inset 40px 40px 80px rgba(0, 0, 0, 0.4);
+}
+.london {
+	background: url(img/london.jpg);
+	background-size: cover;
+}
+.dublin {
+	background: url(img/dublin.jpg);
+	background-size: cover;
+}
+.amsterdam {
+	background: url(img/amsterdam.jpg);
+	background-size: cover;
+}
+.gridwrapper4 {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+.gridwrapper6 {
+	display: inline-grid;
+	grid-template-columns: auto auto auto auto auto auto;
+	grid-gap: 20px;
+	grid-row-gap: 20px;
+	width: 100%;
+	align-content: center;
+	padding: 20px 0;
+}
+
+.grid {
+	margin-bottom: 20px;
+}
+
+.slidecontainer {
+	margin-top: 40px;
+}
+
+.summary {
+	margin-bottom: 40px;
+}
+
+.menu {
+	display: none;
+}
+@media only screen and (max-width: 760px) {
+	body {
+		font-size: 16px;
+	}
+	h1 {
+		font-size: 32px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+	h3 {
+		font-size: 20px;
+	}
+	h4 {
+		font-size: 16px;
+	}
+	p {
+		margin: 0 0 20px 0;
+	}
+	.case {
+		margin-bottom: 10px;
+		padding: 10px;
+	}
+	a.option {
+		border: 1px solid #2A9FD8;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 10px;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 10px;
+		margin-right: 10px;
+	}
+	a.option2 {
+		border: 1px solid #2A9FD8;
+		border-radius: 5px;
+		display: inline-block;
+		padding: 10px;
+		text-align: center;
+		cursor: pointer;
+		margin-bottom: 40px;
+		margin-right: 40px;
+	}
+	.venues img {
+		margin-bottom: 8px;
+		border-radius: 10px;
+		width: 100%;
+	}
+	.hamburger {
+		width: 44px;
+		position: absolute;
+		right: 20px;
+		top: 20px;
+		background: #fff;
+	}
+	button.hamburger {
+		color: #2A9FD8;
+		padding: 10px;
+		font-size: 16px;
+		min-width: 44px;
+		margin: 0;
+		border: 1px solid #2A9FD8;
+		box-shadow: none;
+	}
+	.quote {
+		padding: 40px;
+		border-left: none;
+		justify-content: center;
+		align-items: center;
+		margin-top: 20px;
+	}
+	.mainnav {
+		display: none;
+	}
+	label {
+		margin-bottom: 10px;
+		display: inline-block;
+		font-size: 14px;
+	}
+	#mobile-menu {
+		display: none;
+	}
+	#mobile-menu {
+		background-color: #fff;
+		padding: 80px 20px 20px 20px;
+		width: 100%;
+		border-radius: 0 0 5px 5px;
+		z-index: 3000;
+		animation-name: slide;
+		animation-duration: 0.3s;
+		animation-timing-function: ease;
+		position: absolute;
+		opacity: 0.98;
+		box-shadow: 4px 4px 4px rgba(47, 47, 47, 0.2);
+	}
+	.corporate {
+		display: none;
+	}
+	@keyframes slide {
+		from {
+			right: 3000px;
+			opacity: 0.1
+		}
+		to {
+			left: 0;
+			opacity: 0.9;
+		}
+	}
+	.journey {
+		display: none;
+	}
+	h3 {
+		text-align: left;
+	}
+	.gridwrapper1,
+	.gridwrapper3,
+	.gridwrapper4,
+	.gridwrapper6,
+	.gridwrapper1c,
+	.spacepics,
+	.gridwrapper1b {
+		display: block;
+		padding: 20px 0 20px 0;
+		width: 100%;
+		align-content: center;
+		justify-content: center;
+	}
+	.spacepics img {
+		margin-bottom: 20px;
+	}
+	.format {
+		margin-bottom: 20px;
+	}
+	a.guest.current {
+		border-bottom: 1px solid #2A9FD8;
+		padding-bottom: 20px;
+	}
+	a.guest {
+		margin-right: 14px;
+		margin-bottom:40px;
+		padding-bottom: 20px;
+		font-size: 14px;
+	}
+	.menu {
+		display: block;
+		right: 20px;
+		margin: 0;
+		padding: 0;
+		text-align: center;
+	}
+	.mobile a {
+		display: block;
+		padding: 20px;
+		margin-bottom: 10px;
+		color: #2A9FD8;
+	}
+	.mobile a.host {
+		border: 1px solid #2A9FD8;
+		border-radius: 5px;
+	}
+	.mobile a.host:hover {
+		border: 1px solid #2A9FD8;
+		color: #fff;
+		transition: color 0.2s;
+	}
+	.yourEvent {
+		display: none;
+	}
+	.venues2 {
+		margin-bottom: 20px;
+	}
+	button {
+		margin-bottom: 20px;
+		font-size: 16px;
+	}
+	.card {
+		overflow: hidden;
+	}
+	.card:first-child {
+		margin-top: 104px;
+	}
+	.mainnav {
+		justify-content: center;
+	}
+	input,
+	select,
+	textarea {
+		padding: 15px;
+		font-size: 16px;
+	}
+	.centered {
+		padding: 20px;
+	}
+	.features {
+		text-align: center;
+	}
+	ul.features li {
+		padding: 10px;
+		display: block;
+		width: 100%;
+	}
+	p {
+		padding: 0 0 10px 0;
+	}
+	.tooltip {
+		display:none;
+	}
+}
