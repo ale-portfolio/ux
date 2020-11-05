@@ -252,7 +252,7 @@ button,
 input[type="submit"],a.likebutton {
 	font-family: 'Rubik', helvetica, arial, sans-serif;
 	font-weight: 700;
-	border-radius: 10px;
+	border-radius: 20px;
 	border: none;
 	box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.2);
 	margin: 20px 0 20px 0;
