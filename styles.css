@@ -234,7 +234,7 @@ q::after {
 body {
 	background-color: rgba(250,250,250,1);
 	color: rgba(0, 42, 59,0.7);
-	font-family: 'Open sans', helvetica, arial, sans-serif;
+	font-family: 'Rubik', helvetica, arial, sans-serif;
 	font-size: 26px;
 	margin: auto;
 	-webkit-font-smoothing: antialiased;
@@ -250,7 +250,7 @@ button[type="submit"] {
 
 button,
 input[type="submit"],a.likebutton {
-	font-family: 'Open sans', helvetica, arial, sans-serif;
+	font-family: 'Rubik', helvetica, arial, sans-serif;
 	font-weight: 700;
 	border-radius: 10px;
 	border: none;
@@ -532,7 +532,7 @@ label {
 input,
 textarea,
 select {
-	font-family: "Open sans", helvetica, arial, sans-serif;
+	font-family: "Rubik", helvetica, arial, sans-serif;
 	background-color: #F0F6F8;
 	border: 1px solid rgba(0, 41, 54, 0.1);
 	border-radius: 5px;
